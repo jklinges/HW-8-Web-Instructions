@@ -1,123 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bootstrap Visualization Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA_Compatible" content="ie=edge">
+  <title>Humidity</title>
 
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-
-  <!--CSS Link-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="Style.css" media="screen">
 
 </head>
+<!-- Main Content -->
 
+<div style="background-color:rgb(25, 180, 180);">
+
+  <div class='row'>
+
+      <div class="col-md-12">
+
+          </br> <!-- line breaks for spacing between navbar and header -->
 <body>
-  <!-- Navigation Section -->
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
-      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-              <a class="dropdown-item active" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" role="navigation">
+     <div class="container-fluid navbar-custom">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
+            <span class="sr-only">Show and Hide the Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="landing.html", style="color: white;" id="landing-btn">Latitude</a>
+           </div>
 
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- Content Section -->
+          </div>
+        </div>  <!-- navbar-header -->
+
+        <!-- Collect the navigation links, forms and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"> 
+            </li>      
+            <li class="dropdown">           
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="MaxTemperature.html">Max Temperature</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="WindSpeed.html">Wind Speed</a></li>
+              </ul>
+              <li><a href="Comparison.html">Comparison</a></li>
+              <li><a href="Data.html">Data</a></li>   
+            <li><a href="">    </a></li> 
+          </ul>
+        </div>    <!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-12">
-        <!-- Left box  -->
-        <div class="box">
-          <h3 class="title">Humidity</h3>
-          <hr>
-          <img src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
-          <p>Humidity does not show a strong correlation to latitude. The visualization shows a great variety of
-            humidity percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive
-            pattern between humidity and latitude.</p>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-12">
-        <!-- Right Box -->
-        <div class="box">
-          <h5 class="title">Visualizations</h5>
-          <hr>
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header text-center">Humidity</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/Assets/Fig2.png" alt="" class="img-responsive"/>
+          <p> Cities in the dataset experience humidity between 0% and 100%. There are a few cities in the 
+            Northern Hemisphere where the humidity is 0%. While there is no one-to-one association 
+            between the humidity and latitudes, there is a somewhat symmetrical distribution of 
+            cities in both hemispheres for humidity between 60% and 100%, and  between 20% and 60%.</p>
+        </article> <!-- article -->
+      </div> <!-- col-sm-8 -->
 
-
-          <div class="container">
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
-                <a href="max_temperature.html">
-                  <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
-                </a>
-              </div>
-              <div class="col-6">
-                <a href="humidity.html">
-                  <img class="panel active" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
-                </a>
-              </div>
+      <div class="col-sm-4">
+        <!-- Visualizations imageNav area -->
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <div class="imageNav-header text-center">Visualizations</div>
+            <hr />
+            <div id="images">
+               
+               <a href="MaxTemperature.html"><img src="Resources/Assets/Fig1.png" class="imageNav-photo"></a>
+               <a href="Cloudiness.html"><img src="Resources/Assets/Fig3.png" class="imageNav-photo"></a>
+               <a href="WindSpeed.html"><img src="Resources/Assets/Fig4.png" class="imageNav-photo"></a>
             </div>
+          </div>  <!-- imageNav content -->
+        </section>  <!-- imageNav-area -->
+        <!-- End of Visualization imageNav area -->
+      </div> <!--  col-sm-4  -->
 
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
-                <a href="cloudiness.html">
-                  <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
-                </a>
-              </div>
-              <div class="col-6">
-                <a href="wind_speed.html">
-                  <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
-                </a>
-              </div>
+    </div> <!-- row  -->
+  </div> <!-- End of the container -->
 
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer Section -->
-  <footer>
-    
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
+  <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4/0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
