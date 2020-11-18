@@ -2,23 +2,131 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA_Compatible" content="ie=edge">
-  <title>Maximum Temperature</title>
 
-   <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" media="screen">
-  <link rel="stylesheet" href="Style.css" media="screen">
-
-</head>
-!-- Main Content -->
-
+<!-- Main Content -->
 <div style="background-color:rgb(25, 180, 180);">
 
   <div class='row'>
+    
+       <div class="col-md-12
+    
+              
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="Working with bootstrap and html and css">
 
-      <div class="col-md-12">
+  <title>Maximum Temperature</title>
+
+   <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="Style.css" media="screen">
+
+</head>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Weather of 500+ Cities</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="temperature.html">Max Temperature
+                <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="humidity.html">Humidity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cloudiness.html">Cloudiness</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wind_speed.html".html">Wind Speed</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+        <!-- Heading Row -->
+        <div class="row align-items-center my-5">
+          
+          <!-- /.col-lg-8 -->
+          <div class="col-lg-5">
+            <h1 class="font-weight-light">Temperature (F) vs. Latitude</h1>
+            <p> As expected, the weather becomes significantly warmer as one approaches the equator (0 Degree Latitude). More interestingly, however, is the fact that Southern Hemisphere tends to be warmer this time of year than Northern Hemisphere. This may be due to the tilt of the earth at the time of the year that the data was gathered.</p>
+            <a class="btn btn-primary" href="index.html">Return Home</a>
+          </div>
+          <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <article class="description-content">
+            <h1 class="description-header text-center">Max Temperature</h1>
+            <hr class="description-hr"/>
+            <img src="Resources/Assets/Fig1.png" alt="" class="img-responsive"/>
+            <
+          </article> <!-- article -->
+        </div> <!-- col-sm-8 -->
+  
+        <div class="col-sm-4">
+          <!-- Visualizations imageNav area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+             <hr />
+              <div id="images">
+                  
+              </div>
+            </div>  <!-- imageNav content -->
+          </section>  <!-- imageNav-area -->
+          <!-- End of Visualization imageNav area -->
+        </div> <!--  col-sm-4  -->
+  
+      </div> <!-- row  -->
+    </div> <!-- End of the container -->
+    
+  
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+     <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
+
+=====        
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-default">
@@ -44,13 +152,13 @@
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="MaxTemperature.html">Max Temperature</a></li>
+              <li><a href="Max_Temperature.html">Max Temperature</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="Humidity.html">Humidity</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="Cloudiness.html">Cloudiness</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="WindSpeed.html">Wind Speed</a></li>
+              <li><a href="Wind_Speed.html">Wind Speed</a></li>
             </ul>
             <li><a href="Comparison.html">Comparison</a></li>
             <li><a href="Data.html">Data</a></li>  
@@ -60,42 +168,14 @@
     </div> <!-- /.container-fluid -->
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <article class="description-content">
-          <h1 class="description-header text-center">Max Temperature</h1>
-          <hr class="description-hr"/>
-          <img src="Resources/Assets/Fig1.png" alt="" class="img-responsive"/>
-          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Degree Latitude). More interestingly, however, is the fact that Southern Hemisphere tends to be warmer this time of year than Northern Hemisphere. This may be due to the tilt of the earth at the time of the year that the data was gathered.</p>
-        </article> <!-- article -->
-      </div> <!-- col-sm-8 -->
-
-      <div class="col-sm-4">
-        <!-- Visualizations imageNav area -->
-        <section id="imageNav-area">
-          <div class="imageNav-content">
-            <div class="imageNav-header text-center">Visualizations</div>
-            <hr />
-            <div id="images">
-                
-                <a href="Humidity.html"><img src="Resources/Assets/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                <a href="Cloudiness.html"><img src="Resources/Assets/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                <a href="WindSpeed.html"><img src="Resources/Assets/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
-            </div>
-          </div>  <!-- imageNav content -->
-        </section>  <!-- imageNav-area -->
-        <!-- End of Visualization imageNav area -->
-      </div> <!--  col-sm-4  -->
-
-    </div> <!-- row  -->
-  </div> <!-- End of the container -->
-
-  <!-- jQuery CDN -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-  <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright Data Analytics and Visualization Bootcamp UNC - Chapel Hill 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+ 
 </body>
 
 </html>
